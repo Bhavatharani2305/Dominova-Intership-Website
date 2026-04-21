@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | DOMINOVA Internship Program</title>
+    <meta name="description" content="Register for the DOMINOVA Internship Program and take the first step in your tech career.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .registration-page {
+            background: #f0fdf4;
+            min-height: 100vh;
+            padding: 120px 0 60px;
+        }
+
+        .back-nav {
+            margin-bottom: 2rem;
+        }
+
+        .back-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+        }
+
+        .back-nav a:hover {
+            transform: translateX(-5px);
+        }
+
+        .reg-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .reg-card {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+        }
+
+        .form-title {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 2.5rem;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .success-overlay {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .success-overlay i {
+            font-size: 4rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .success-overlay h2 {
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .reg-card {
+                padding: 1.5rem;
+                border-radius: 20px;
+            }
+            .form-title {
+                font-size: 1.5rem;
+            }
+            .registration-page {
+                padding: 100px 0 40px;
+            }
+        }
+    </style>
+</head>
+<body class="registration-page-body">
+    <!-- Navigation (Light version) -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="DOMINOVA Logo" style="height: 50px;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#benefits">Benefits</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="registration-page">
+        <div class="container">
+            <div class="back-nav" data-aos="fade-right">
+                <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            </div>
+
+            <div class="reg-card glass" data-aos="fade-up">
+                <div id="registration-content">
+                    <h1 class="form-title">Register for <span class="text-green">DOMINOVA</span> Internship</h1>
+                    
+                        <div style="text-align: center; padding: 2rem 0;">
+                            <p style="margin-bottom: 2rem; font-size: 1.1rem; color: var(--text-light);">To complete your registration for the DOMINOVA Internship Program, please fill out the official application form below.</p>
+                            <a href="https://forms.gle/EVZCnUqzqMD8wqSw5" target="_blank" class="btn btn-primary btn-full" style="display: inline-block; width: auto; padding: 15px 40px; font-size: 1.2rem;">
+                                Fill Official Registration Form <i class="fas fa-external-link-alt" style="margin-left: 10px;"></i>
+                            </a>
+                        </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer style="background: #111827; padding: 40px 0;">
+        <div class="container">
+            <div style="text-align: center; color: white;">
+                <img src="logo.png" alt="DOMINOVA Logo" style="height: 50px; margin-bottom: 1rem;">
+                <p>&copy; 2026 DOMINOVA. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({ duration: 800, once: true });
+        });
+    </script>
+</body>
+</html>
